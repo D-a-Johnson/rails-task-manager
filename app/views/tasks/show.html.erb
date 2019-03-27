@@ -1,0 +1,10 @@
+<div>
+  <h1><%= @task.title %></h1>
+  <div>
+    <div>
+      <p><%= @task.details %></p>
+    </div>
+    <p><input type="checkbox"><%= @task.completed ? "This task has been completed" : "This task has not been completed"%></p>
+  </div>
+</div>
+<footer><%= link_to "Back to List", tasks_path %></p></footer>
